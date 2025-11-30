@@ -1,0 +1,9 @@
+{
+	"nuxtr.defaultPackageManager": "pnpm",
+	"nuxtr.vueFiles.script.defaultLanguage": "ts",
+	"nuxtr.projectTemplates": [],
+	"nuxtr.vueFiles.firstTag": "script",
+	"nuxtr.vueFiles.script.type": "setup",
+	"nuxtr.vueFiles.style.addStyleTag": false,
+	"tailwindCSS.classFunctions": ["cva", "cx"],
+}
