@@ -36,7 +36,7 @@
 /* SLIDE UP TRANSTION */
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide-up-enter-from {
@@ -53,7 +53,7 @@
 /* SLIDE DOWN TRANSTION */
 .slide-down-enter-active,
 .slide-down-leave-active {
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slide-down-enter-from {

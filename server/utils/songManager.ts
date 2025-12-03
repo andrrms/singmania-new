@@ -1,8 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
-import { Languages, SongItem } from '~~/shared/types/songs';
-import { Database } from '~~/shared/types/database.types';
 
-export const getSongs = async (options: SongFilterOptions): Promise<{ data: SongItem[]; total: number }> => {
+export const getSongs = async (options: SongFilterOptions): Promise<{ data: SongRow[]; total: number }> => {
   const { page, limit, search, sort, order, type, language } = options;
   const offset = (page - 1) * limit;
   // const fetchAll = limit === -1;
@@ -58,7 +56,7 @@ export const getSongs = async (options: SongFilterOptions): Promise<{ data: Song
   }
 };
 
-export const getSongContent = async (id: string): Promise<SongItem | null> => {
+export const getSongContent = async (id: string): Promise<SongRow | null> => {
   try {
     const supabase = createClient<Database>(process.env.SUPABASE_URL!, process.env.SUPABASE_KEY!);
     const { data, error } = await supabase

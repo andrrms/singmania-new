@@ -18,6 +18,23 @@ export default defineNuxtConfig({
     },
   },
 
+  fonts: {
+    defaults: {
+      weights: ['100 900'],
+      styles: ['normal', 'italic'],
+    },
+    families: [
+      {
+        name: 'Montserrat',
+        weight: [100, 900],
+      },
+      {
+        name: 'Roboto',
+        weight: [100, 900],
+      }
+    ],
+  },
+
   css: ['./app/assets/css/main.css'],
   vite: {
     plugins: [

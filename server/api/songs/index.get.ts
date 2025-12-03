@@ -24,7 +24,7 @@ export default defineEventHandler(async (event) => {
 			page,
 			limit,
 			total,
-			totalPages: limit === -1 ? 1 : Math.ceil(total / limit),
+			total_pages: limit === -1 ? 1 : Math.ceil(total / limit),
 		}
 	}
 });

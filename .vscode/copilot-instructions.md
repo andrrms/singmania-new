@@ -1,0 +1,2 @@
+1. Como isso é um projeto em Nuxt 4, apenas faça importações explícitas caso o editor reclame de algo não estar definido. O Nuxt 4 lida com a maioria das importações automaticamente.
+2. Use ponto e vírgula no final de cada linha.

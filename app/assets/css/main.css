@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+@utility text-outline-* {
+	--tw-outline-width: --spacing(--value(integer));
+	--tw-outline-width: --value([length]);
+
+	text-shadow: 
+		calc(var(--tw-outline-width) * -1) calc(var(--tw-outline-width) * -1) 0 #000,
+		var(--tw-outline-width) calc(var(--tw-outline-width) * -1) 0 #000,
+		calc(var(--tw-outline-width) * -1) var(--tw-outline-width) 0 #000,
+		var(--tw-outline-width) var(--tw-outline-width) 0 #000;
+}
+
+@layer utilities {
+	.small-caps {
+		font-variant: small-caps;
+	}
+
+	.font-montserrat {
+		font-family: 'Montserrat', sans-serif;
+	}
+	
+	.font-roboto {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.scrollbar-none {
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		-ms-overflow-style: none;  /* IE and Edge */
+		scrollbar-width: none;  /* Firefox */
+	}
+}

@@ -12,9 +12,5 @@ export default defineEventHandler(async (event) => {
 		statusMessage: 'Song not found',
 	});
 
-	return {
-		id: content.id,
-		content: content.content,
-		createdAt: content.createdAt,
-	}
+	return content;
 });
