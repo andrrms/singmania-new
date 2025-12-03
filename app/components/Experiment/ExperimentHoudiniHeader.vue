@@ -15,7 +15,7 @@ import duaLipaImage from '~/assets/images/dua-lipa.png';
 				<h3 class="text-[clamp(7rem,9vw,11rem)] leading-[0.75] text-[#fce00c] font-extrabold text-outline-2 select-none">Dua Lipa</h3>
 			</div>
 		</div>
-		<button class="w-fit text-[clamp(1.5rem,1.5vw,1.875rem)] bg-white text-black font-montserrat font-bold px-8 py-2 float-end -mt-[clamp(3rem,3.3vw,4rem)] me-8 border-4 cursor-pointer rotate-0 hover:rotate-5 hover:bg-[#fce00c] focus-visible:rotate-5 focus-visible:bg-[#fce00c] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white ease-out duration-75">
+		<button class="z-10 w-fit text-[clamp(1.5rem,1.5vw,1.875rem)] bg-white text-black font-montserrat font-bold px-8 py-2 float-end -mt-[clamp(3rem,3.3vw,4rem)] me-8 border-4 cursor-pointer rotate-0 hover:rotate-5 hover:bg-[#fce00c] focus-visible:rotate-5 focus-visible:bg-[#fce00c] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white ease-out duration-75">
 			<span class="select-none">Ir para a música</span>
 		</button>
 	</header>
