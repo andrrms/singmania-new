@@ -28,5 +28,27 @@ const settings = useSettingsStore();
 				Disable Reduced Motion
 			</button>
 		</div>
+
+		<div class="mt-5">
+			<p>Quality</p>
+			<button
+				class="mr-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 duration-200 disabled:opacity-50 disabled:hover:bg-white/10 cursor-pointer"
+				:disabled="settings.overallQuality === 'high'"
+				@click="() => settings.setOverallQuality('high')">
+				High
+			</button>
+			<button
+				class="mr-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 duration-200 disabled:opacity-50 disabled:hover:bg-white/10 cursor-pointer"
+				:disabled="settings.overallQuality === 'medium'"
+				@click="() => settings.setOverallQuality('medium')">
+				Medium
+			</button>
+			<button
+				class="mr-2 bg-white/10 px-4 py-2 rounded-md hover:bg-white/20 duration-200 disabled:opacity-50 disabled:hover:bg-white/10 cursor-pointer"
+				:disabled="settings.overallQuality === 'low'"
+				@click="() => settings.setOverallQuality('low')">
+				Low
+			</button>
+		</div>
 	</div>
 </template>

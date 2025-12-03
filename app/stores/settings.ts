@@ -1,13 +1,8 @@
 import { defineStore } from 'pinia'
 
 export const useSettingsStore = defineStore('settings', () => {
-  const prefersReducedMotion = ref(true);
+  const prefersReducedMotion = ref(false);
   const navigatorPrefersReducedMotion = usePreferredReducedMotion();
-
-  watch(navigatorPrefersReducedMotion, (newValue) => {
-    prefersReducedMotion.value = newValue === 'reduce';
-  });
-
   function setPreferredMotion(value: 'normal' | 'reduced') {
     if (value === 'reduced') {
       prefersReducedMotion.value = true;
@@ -16,8 +11,19 @@ export const useSettingsStore = defineStore('settings', () => {
     }
   }
 
+  const overallQuality = ref<'low' | 'medium' | 'high'>('high');
+  function setOverallQuality(value: 'low' | 'medium' | 'high') {
+    overallQuality.value = value;
+  }
+
+  watch(navigatorPrefersReducedMotion, (newValue) => {
+    prefersReducedMotion.value = newValue === 'reduce';
+  });
+
   return {
     prefersReducedMotion,
     setPreferredMotion,
+    overallQuality,
+    setOverallQuality,
   }
 });
