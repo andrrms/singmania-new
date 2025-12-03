@@ -1,5 +1,4 @@
 import { z } from "zod";
-import type { Tables } from "../types/database.types";
 import type { SongRow } from "../types/songs";
 
 export const SongSchema = z.object({
